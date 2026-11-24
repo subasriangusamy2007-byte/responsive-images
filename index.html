@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Images</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Responsive Images</h1>
+
+  <picture>
+    <source
+      media="(max-width: 600px)"
+      srcset="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600"
+    >
+
+    <img
+      src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200"
+      srcset="
+        https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600 600w,
+        https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200 1200w
+      "
+      sizes="(max-width: 600px) 100vw, 80vw"
+      alt="Beautiful landscape"
+    >
+  </picture>
+
+</body>
+</html>
